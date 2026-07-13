@@ -71,8 +71,9 @@ def sum_of_digits(n):
 
 # 12
 def is_even(n):
-    """Return True if n is even, otherwise False"""
-    pass
+    return n % 2 == 0
+print(is_even(4))
+print(is_even(7))
 
 
 # 13
