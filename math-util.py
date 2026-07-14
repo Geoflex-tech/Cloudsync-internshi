@@ -1,3 +1,5 @@
+import math
+
 # math-util.py
 # Each numbered function is assigned to one student.
 # Implement the body (replace `pass`) and push your changes to git.
@@ -54,7 +56,9 @@ def gcd(a, b):
 # 9
 def lcm(a, b):
     """Return the least common multiple of a and b"""
-    pass
+    if a == 0 or b == 0:
+        return 0
+    return abs(a // math.gcd(a, b) * b)
 
 
 # 10
