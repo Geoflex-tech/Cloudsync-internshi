@@ -70,7 +70,19 @@ def fibonacci(n):
 # 11
 def sum_of_digits(n):
     """Return the sum of the digits of n"""
-    pass
+    
+    n = abs(n)  # Handles negative numbers
+    total = 0
+
+    while n > 0:
+        total += n % 10
+        n //= 10
+
+    return total
+
+print(sum_of_digits(1234))   # Output: 10
+print(sum_of_digits(9876))   # Output: 30
+print(sum_of_digits(-456))   # Output: 15
 
 
 # 12
